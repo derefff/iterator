@@ -10,19 +10,23 @@ private:
 
     int go_next_index()
     {
-
+        return current_index++;
     }
 
     int go_previous_index()
     {
-        
+        return current_index--;
     }
 public:
 
-    Iterator()
+    Iterator(int ci)
     {
+        current_index = ci;
         printf("iterator construct creation");
     }
 
+    void show_current_index(){
+        printf("%d", current_index);
+    }
 
 };
