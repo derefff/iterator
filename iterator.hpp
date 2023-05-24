@@ -1,7 +1,0 @@
-
-class Iterator
-{
-public:
-    Iterator();
-
-};

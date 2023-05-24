@@ -1,13 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#include "Book.cpp"
 #include "iterator.cpp"
 
 int main()
 {
-	Iterator i(1);
-	printf("\n");
-	i.show_current_index();
-	
+	Book b =Book("Henryk Sienkiewicz", "Quo Vadis");
+	b.show();
 	return 0;
 }
