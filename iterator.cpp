@@ -7,9 +7,9 @@
 
 class Iterator
 {
-private:
-    virtual bool hasNext() const = 0;
-    virtual Book* next() = 0;
+    private:
+        virtual bool hasNext() const = 0;
+        virtual Book* next() = 0;
 };
 
 #endif ITERATOR_H

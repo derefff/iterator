@@ -20,7 +20,7 @@ class Book
            std::cout<< author<<" "<<title<<std::endl;
         }
 
-        
+
 
 };
 #endif BOOK_H
