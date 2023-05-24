@@ -1,3 +1,6 @@
+#ifndef BOOK_H
+#define BOOK_H
+
 #include<string>
 #include<stdlib.h>
 #include<iostream>
@@ -11,12 +14,13 @@ class Book
     public:
         Book(std::string a, std::string t): author(a),title(t)
         {
-
         }
 
         void show(){
-           // printf("%s %s \n",author, title);
            std::cout<< author<<" "<<title<<std::endl;
         }
 
+        
+
 };
+#endif BOOK_H
