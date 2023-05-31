@@ -8,26 +8,31 @@
 #include "Book.cpp"
 #include "iterator.cpp"
 
-class BookCollection:private iterator
-{
+class BookCollection:public Iterator{
     private:
     std::vector<Book*> BookDB;
     int currentIndex = 0;
+    int* indexPtr = &currentIndex;
     
     public:
         bool hasNext(){
-           if(BookDB.size() < currentIndex) return true;
-            return false;
+           //std::cout<<BookDB.size()<<" "<<currentIndex<<std::endl;
+           if(BookDB.size()-1 >= currentIndex) 
+           {
+            //currentIndex++;
+            return true;
+           }
+            else return false;
         }
 
-    Book* next(){
-        if(hasNext())
-        {
-            return BookDB[currentIndex++];
+        Book* next(){
+            //std::cout<<indexPtr;
+            if(hasNext())
+            {  
+                return BookDB[currentIndex++];
+            }
+            return nullptr;
         }
-        return nullptr;
-    }
-
   
         void addItem(Book &b){
             BookDB.push_back(&b);
