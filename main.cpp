@@ -12,10 +12,14 @@ int main()
 	Book b1 =Book("Henryk Sienkiewicz", "Quo Vadis");
 	Book b2 =Book("Adam Mickiewicz", "Vadis Quo");
 	Book b3 =Book("Henryk Sienkiewicz", "Potop");
+	Book b4 =Book("J.K. Rowling", "Harry Potter i Kamień Filozoficzny");
+	Book b5 =Book("George Orwell", "Rok 1984");
 
 	BookContainer.addItem(b1);
 	BookContainer.addItem(b2);
 	BookContainer.addItem(b3);
+	BookContainer.addItem(b4);
+	BookContainer.addItem(b5);
 
 	cout<<BookContainer.hasNext();
 

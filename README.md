@@ -14,5 +14,5 @@ make compile-run
 
 ## generowanie dokumentacji (doxygen)
 ```bash
-doxygen -g iterator
+doxygen iterator
 ```

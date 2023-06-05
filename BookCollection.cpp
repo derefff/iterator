@@ -36,4 +36,4 @@ class BookCollection:public Iterator{
         }
 
 };
-#endif BOOKDB_H
+#endif

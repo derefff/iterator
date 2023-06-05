@@ -11,4 +11,4 @@ class Iterator
         virtual bool hasNext()  = 0;
         virtual Book* next() = 0;
 };
-#endif ITERATOR_H
+#endif
