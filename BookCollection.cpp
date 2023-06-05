@@ -12,7 +12,6 @@ class BookCollection:public Iterator{
     private:
     std::vector<Book*> BookDB;
     int currentIndex = 0;
-    int* indexPtr = &currentIndex;
     
     public:
         bool hasNext(){

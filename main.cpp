@@ -21,8 +21,6 @@ int main()
 	BookContainer.addItem(b4);
 	BookContainer.addItem(b5);
 
-	cout<<BookContainer.hasNext();
-
 	while(BookContainer.hasNext())
 	{
 		Book* b = BookContainer.next();

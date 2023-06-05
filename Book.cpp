@@ -16,7 +16,7 @@ class Book
         }
 
         void show(){
-           std::cout<< author<<" "<<title<<std::endl;
+           std::cout<< author<<" - "<<title<<std::endl;
         }
 
 };
