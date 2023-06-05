@@ -16,17 +16,14 @@ class BookCollection:public Iterator{
     
     public:
         bool hasNext(){
-           //std::cout<<BookDB.size()<<" "<<currentIndex<<std::endl;
            if(BookDB.size()-1 >= currentIndex) 
            {
-            //currentIndex++;
             return true;
            }
             else return false;
         }
 
         Book* next(){
-            //std::cout<<indexPtr;
             if(hasNext())
             {  
                 return BookDB[currentIndex++];
@@ -37,8 +34,6 @@ class BookCollection:public Iterator{
         void addItem(Book &b){
             BookDB.push_back(&b);
         }
-
-
 
 };
 #endif BOOKDB_H
