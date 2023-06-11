@@ -24,7 +24,6 @@ int main()
 	while(BookContainer.hasNext())
 	{
 		Book* b = BookContainer.next();
-
 		b->show();
 	}
 	return 0;
